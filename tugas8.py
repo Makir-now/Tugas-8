@@ -87,3 +87,13 @@ print(f"\nHasil panen padi lokasi2: {hasil_padi_lok2}, kedelai: {hasil_kedelai_l
 print(f"\nHasil panen padi lokasi3: {hasil_padi_lok3}, kedelai: {hasil_kedelai_lok3}")
 print(f"\nHasil panen padi lokasi4: {hasil_padi_lok4}, kedelai: {hasil_kedelai_lok4}")
 print(f"\nHasil panen padi lokasi5: {hasil_padi_lok5}, kedelai: {hasil_kedelai_lok5}")
+
+#6
+print("\nStatus dari Lokasi:")
+for lokasi, data in data_panen.items():
+    padi = data['hasil_panen']['padi']
+    jagung = data['hasil_panen']['jagung']
+    if padi > 1300 or jagung > 800:
+        print(f"{data['nama_lokasi']} memerlukan perhatian khusus.")
+    else:
+        print(f"{data['nama_lokasi']} dalam kondisi baik.")
