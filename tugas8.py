@@ -65,3 +65,25 @@ for lokasi, data in data_panen.items():
 
 print("\nHasil panen padi per lokasi:", hasil_padi)
 print("Hasil panen kedelai per lokasi:", hasil_kedelai)
+
+#5
+hasil_padi_lok1 = data_panen["lokasi1"]["hasil_panen"]["padi"]
+hasil_kedelai_lok1 = data_panen["lokasi1"]["hasil_panen"]["kedelai"]
+
+hasil_padi_lok2 = data_panen["lokasi2"]["hasil_panen"]["padi"]
+hasil_kedelai_lok2 = data_panen["lokasi2"]["hasil_panen"]["kedelai"]
+
+hasil_padi_lok3 = data_panen["lokasi3"]["hasil_panen"]["padi"]
+hasil_kedelai_lok3 = data_panen["lokasi3"]["hasil_panen"]["kedelai"]
+
+hasil_padi_lok4 = data_panen["lokasi4"]["hasil_panen"]["padi"]
+hasil_kedelai_lok4 = data_panen["lokasi4"]["hasil_panen"]["kedelai"]
+
+hasil_padi_lok5 = data_panen["lokasi5"]["hasil_panen"]["padi"]
+hasil_kedelai_lok5 = data_panen["lokasi5"]["hasil_panen"]["kedelai"]
+
+print(f"\nHasil panen padi lokasi1: {hasil_padi_lok1}, kedelai: {hasil_kedelai_lok1}")
+print(f"\nHasil panen padi lokasi2: {hasil_padi_lok2}, kedelai: {hasil_kedelai_lok2}")
+print(f"\nHasil panen padi lokasi3: {hasil_padi_lok3}, kedelai: {hasil_kedelai_lok3}")
+print(f"\nHasil panen padi lokasi4: {hasil_padi_lok4}, kedelai: {hasil_kedelai_lok4}")
+print(f"\nHasil panen padi lokasi5: {hasil_padi_lok5}, kedelai: {hasil_kedelai_lok5}")
