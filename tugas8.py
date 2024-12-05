@@ -40,3 +40,9 @@ data_panen = {
         }
     }
 }
+
+for lokasi, data in data_panen.items():
+    print(f"Lokasi: {data['nama_lokasi']}")
+    for komoditas, jumlah in data['hasil_panen'].items():
+        print(f"  {komoditas.capitalize()}: {jumlah} kg")
+    print()
