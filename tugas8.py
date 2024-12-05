@@ -55,3 +55,13 @@ print(f"\nJumlah panen jagung dari lokasi2 (Kebun B): {hasil_jagung_lok2}")
 #3
 nama_lok3 = data_panen["lokasi3"]["nama_lokasi"]
 print(f"Nama lokasi dari lokasi3: {nama_lok3}")
+
+#4
+hasil_padi = {}
+hasil_kedelai = {}
+for lokasi, data in data_panen.items():
+    hasil_padi[lokasi] = data['hasil_panen']['padi']
+    hasil_kedelai[lokasi] = data['hasil_panen']['kedelai']
+
+print("\nHasil panen padi per lokasi:", hasil_padi)
+print("Hasil panen kedelai per lokasi:", hasil_kedelai)
